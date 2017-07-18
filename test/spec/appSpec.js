@@ -33,6 +33,7 @@ describe('Siskel', function() {
     });
 
     it('should toggle its state', function() {
+      
       model.toggleLike();
       expect(model.get('like')).to.be.false;
     });
@@ -57,6 +58,7 @@ describe('Siskel', function() {
 
     it('should trigger sort when a model changes', function() {
       model.toggleLike();
+      
       expect(collection.sort).to.have.been.called;
     });
 
